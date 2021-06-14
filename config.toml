@@ -5,7 +5,7 @@ title = "華生的異想世界"
 theme = "liva-hugo"
 summaryLength = "10"
 paginate = 6
-disqusShortname = ""
+disqusShortname = "suwei761005"
 
 [outputs]
   home = ["HTML", "RSS", "JSON"]
