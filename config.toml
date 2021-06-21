@@ -90,7 +90,7 @@ home = "Home"
 description = "華生的異想世界個人網站"
 author = "suwei_huang"
 # Google Analitycs
-googleAnalitycsID = "Your ID"
+googleAnalitycsID = "UA-199943086-1"
 # Contact Information
 mobile = ""
 email = "max761005@gmail.com"
