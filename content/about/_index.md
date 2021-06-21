@@ -7,7 +7,7 @@ draft: false
 image: "images/死亡筆記本.jpg"
 
 # meta description
-description: "this is meta description"
+description: "關於作者的相關描述"
 
 # type
 type : "about"
@@ -16,4 +16,4 @@ type : "about"
 
 ### 歡迎來到華生的異想世界
 
-這是一個關於動漫 電影 遊戲相關的部落格
+這是主要提供各種關於財富自由 個人成長的部落格
