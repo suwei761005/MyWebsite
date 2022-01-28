@@ -7,7 +7,6 @@ summaryLength = "10"
 paginate = 6
 disqusShortname = "suwei761005"
 googleAnalitycsID = "UA-199943086-1"
-
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 

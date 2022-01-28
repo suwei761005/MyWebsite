@@ -224,9 +224,14 @@
 .content {
   * {
     font-family: sans-serif;
-    font-size: 16px;
+    // font-size: 16px;
     margin-bottom: 20px;
   }
+  p {
+    font-size: 18px;
+  }
+
+
 
   h1,
   h2,
@@ -330,6 +335,7 @@
     border: 1px solid $border-color;
     border-radius: 3px;
     color: #ff502c;
+    font-size: 16px;
     // font-family: 'Abril Fatface', cursive;
   }
 
