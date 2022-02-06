@@ -4,7 +4,7 @@ date: 2019-10-29T13:49:23+06:00
 draft: false
 
 # image
-image: "images/死亡筆記本.jpg"
+image: ""
 
 # meta description
 description: "關於作者的相關描述"

@@ -219,11 +219,12 @@
 }
 
 // @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather+Sans:ital,wght@0,600;1,500&family=Poppins:wght@300&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Padauk&family=Roboto+Slab&display=swap');
 /* markdown style */
 .content {
   * {
-    font-family: sans-serif;
+    font-family: 'Roboto Slab';
     // font-size: 16px;
     margin-bottom: 20px;
   }
@@ -231,7 +232,9 @@
     font-size: 18px;
   }
 
-
+.des {
+  font-family: 'Padauk';
+}
 
   h1,
   h2,

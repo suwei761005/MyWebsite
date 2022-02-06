@@ -83,7 +83,7 @@ googleAnalitycsID = "UA-199943086-1"
 
 #################### default parameters ################################
 [params]
-logo = "images/watson.jpg"
+logo = "images/watsonicon.jpg"
 home = "Home"
 # Meta data
 description = "華生的異想世界個人網站"

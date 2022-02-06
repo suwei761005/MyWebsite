@@ -21,10 +21,10 @@
 {{ end }}
 
 <footer>
-  <div class="container">
+  <!-- <div class="container">
     <div class="row justify-content-center">
       <div class="col-12 text-center mb-5">
-        <!-- <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a> -->
+        <a href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo | absURL }}" alt="{{ .Site.Title }}"></a>
       </div>
       {{ if or  .Site.Params.mobile .Site.Params.location .Site.Params.email }}         
       <div class="col-lg-3 col-sm-6 mb-5">
@@ -53,7 +53,7 @@
           {{ end }}
         </ul>
       </div>
-      <!-- <div class="col-lg-3 col-sm-6 mb-5">
+      <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Categories</h6>
         {{- if isset .Site.Taxonomies "categories" }}
         {{- if not (eq (len .Site.Taxonomies.categories) 0) }}
@@ -66,7 +66,7 @@
         </ul>
         {{- end }}
         {{- end }}
-      </div> -->
+      </div>
       <div class="col-lg-3 col-sm-6 mb-5">
         <h6 class="mb-4">Quick Links</h6>
         <ul class="list-unstyled">
@@ -79,7 +79,7 @@
         {{ .Site.Params.copyright | markdownify }}
       </div>
     </div>
-  </div>
+  </div> -->
 </footer>
 
 <script>
