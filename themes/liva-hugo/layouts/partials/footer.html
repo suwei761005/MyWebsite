@@ -86,10 +86,7 @@
   var indexURL = {{ "index.json" | absURL }}
 </script>
 
-{{ "<!-- JS Plugins -->" | safeHTML }}
-{{ range .Site.Params.plugins.js}}
-<script src="{{ .URL | absURL }}"></script>
-{{ end }}
+
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>

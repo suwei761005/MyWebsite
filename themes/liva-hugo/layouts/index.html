@@ -8,32 +8,52 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-10 featured-post">
+        <div class="col-md-10 offset-md-1">
+          <div class="jumbotron" style="background-color:aquamarine">
         <!-- slider item -->
-        {{ range ( where .Site.RegularPages "Type" "featured" )}}
-        <article class="card featured-post">
-          <!-- <div class="row no-gutters align-items-center">
-            <div class="col-md-5">
-              {{ if .Params.Image }}
-              <img src="{{ .Params.Image | absURL }}" class="card-img" alt="{{ .Title | markdownify }}">
-              {{ end }}
-            </div> -->
-            <div class="col-md-10 offset-md-2">
-              <div class="jumbotron" >
-                <!-- <div class="mb-3 post-meta">
-                  <span>By {{ .Site.Params.Author }}</span>
-                  {{ if not .Params.HideDate }}
-                  <span class="border-bottom border-primary px-2 mx-1"></span>
-                  <span>{{ .PublishDate.Format "2006-01-02" }}</span>
-                  {{ end }}
-                </div> -->
-                <!-- <div 
-                  class="h1 font-weight-bold d-block text-dark mb-4 card-title">{{ .Title | markdownify }}</div> -->
-                  <h3>{{ .Content }}</h3>
-              </div>
+        
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <!-- {{ range $index,$pages := ( where .Site.RegularPages "Type" "featured" )}}
+          <ol class="carousel-indicators">
+            {{if eq $index 0}}
+            <li data-target="#carouselExampleIndicators" data-slide-to="{{$index}}" class="active"></li>
+        {{else}}
+        <li data-target="#carouselExampleIndicators" data-slide-to="{{$index}}"></li>
+        {{end}}
+          </ol>
+          {{end}} -->
+          
+          <div class="carousel-inner">
+            {{ range $index,$pages := ( where .Site.RegularPages.ByDate "Type" "featured" )}}
+            {{if eq $index 0}}
+            <div class="carousel-item active">
+              <h2 style="text-align: center;">{{ .Title  }}</h2>
+              <h3 style="text-align: center;">{{ .Content }}</h3>
             </div>
+            {{else}}
+            <div class="carousel-item">
+              <h2 style="text-align: center;">{{ .Title  }}</h2>
+              <h3 style="text-align: center;">{{ .Content }}</h3>
+            </div>
+            {{end}}
+            {{ end }}
           </div>
-        </article>
-        {{ end }}
+         
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" style="color: blue;" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" style="color: blue;" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+       
+        </div>
+          </div>
+        </div>
+        <!-- </article> -->
+        
       </div>
     </div>
   </div>
@@ -125,5 +145,9 @@
   </div>
 </section>
 <!-- /blog post -->
-
+<script type="text/javascript">
+  $('#carouselExampleIndicators').carousel({
+    interval: 5000
+  })
+  </script>
 {{ end }}
